@@ -9,79 +9,111 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div id="header-container">
-            <img src="./Assets/images/web_girl_small.jpg" alt="Tech girl with laptop" />
-            <h1 class="full-name">Ashley Williams</h1>
+    <header id="header-container">
+        <img 
+            srcset="./Assets/images/tech-girl-300.jpg 300w,
+                    ./Assets/images/web_girl_medium.jpg 760w,
+                    ./Assets/images/web_girl_large.jpg 980w"  
+            sizes="(max-width: 320px) 300px, 
+                    (max-width: 760px) 720px, 
+                    980px"
+            src="./Assets/images/web_girl_large.jpg"
+            class="header-img"
+            alt="Tech girl with laptop" 
+        />
+        <h1 class="full-name">Ashley Williams</h1>
+    </header>
+    <main id="content-container">
+        <div class="about-me">
             <h2>About me</h2>
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, tortor in placerat efficitur, enim dui porttitor ligula, id pellentesque est neque a mauris. Donec molestie id nulla ac sodales. Phasellus accumsan arcu eu sapien tincidunt rutrum. </div>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
-        </div>
-    </header>
-    <main>
-        <div id="content-container">
-            <h2>My work</h2>
-            <div class="project-container">
-                <div class="project project-1">
-                    <div>screenshot of project</div>
-                    <h3>Project name</h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-                    <img src="./Assets/icons/open-in-new.svg" />
-                    <div>Short description of the project. Just a couple sentences will do.</div>
-                </div>
-                <div class="project project-2">
-                    <div>screenshot of project</div>
-                    <h3>Project name</h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-                    <img src="./Assets/icons/open-in-new.svg" />
-                    <div>Short description of the project. Just a couple sentences will do.</div>
-                </div>
-                <div class="project project-3">
-                    <div>screenshot of project</div>
-                    <h3>Project name</h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-                    <img src="./Assets/icons/open-in-new.svg" />
-                    <div>Short description of the project. Just a couple sentences will do.</div>
-                </div>
-                <div class="project project-4">
-                    <div>screenshot of project</div>
-                    <h3>Project name</h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-                    <img src="./Assets/icons/open-in-new.svg" />
-                    <div>Short description of the project. Just a couple sentences will do.</div>
-                </div>
-                <div class="project project-5">
-                    <div>screenshot of project</div>
-                    <h3>Project name</h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-                    <img src="./Assets/icons/open-in-new.svg" />
-                    <div>Short description of the project. Just a couple sentences will do.</div>
-                </div>
-                <div class="project project-6">
-                    <div>screenshot of project</div>
-                    <h3>Project name</h3>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-                    <img src="./Assets/icons/open-in-new.svg" />
-                    <div>Short description of the project. Just a couple sentences will do.</div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div id="footer-container">
-            <h2>Contact me</h2>
-            <div>Please get in touch if you think our work could be mutually beneficial!</div>
-            <div>1234 Random Road <br> Random Town, Random country 12345</div>
-            <div>555-555-5555 <br> ashleywilliams@gmail.com</div>
-            <div class="socials-container">
+            <div class="header-socials">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
             </div>
-            <img src="./Assets/images/web_girl_sitting_small.jpg" />
         </div>
+        <div class="my-work">
+            <h2>My work</h2>
+            <div class="project-container">
+                <div class="project project-1">
+                    <div class="screen-shot screen-shot-1">screenshot of project</div>
+                    <div class="project-socials">
+                        <h3>Project name</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                        <img src="./Assets/icons/open-in-new.svg" /> 
+                    </div>
+                    <div class="description">Short description of the project. <br> Just a couple sentences will do.</div>
+                </div>
+                <div class="project project-2">
+                    <div class="screen-shot screen-shot-2">screenshot of project</div>
+                    <div class="project-socials">
+                        <h3>Project name</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                        <img src="./Assets/icons/open-in-new.svg" />
+                    </div>
+                    <div class="description">Short description of the project. Just a couple sentences will do.</div>
+                </div>
+                <div class="project project-3">
+                    <div class="screen-shot screen-shot-3">screenshot of project</div>
+                    <div class="project-socials">
+                        <h3>Project name</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                        <img src="./Assets/icons/open-in-new.svg" />
+                    </div>
+                    <div class="description">Short description of the project. Just a couple sentences will do.</div>
+                </div>
+                <div class="project project-4">
+                    <div class="screen-shot screen-shot-4">screenshot of project</div>
+                    <div class="project-socials">
+                        <h3>Project name</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                        <img src="./Assets/icons/open-in-new.svg" />
+                    </div>
+                    <div class="description">Short description of the project. Just a couple sentences will do.</div>
+                </div>
+                <div class="project project-5">
+                    <div class="screen-shot screen-shot-5">screenshot of project</div>
+                    <div class="project-socials">
+                        <h3>Project name</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                        <img src="./Assets/icons/open-in-new.svg" />
+                    </div>
+                    <div class="description">Short description of the project. Just a couple sentences will do.</div>
+                </div>
+                <div class="project project-6">
+                    <div class="screen-shot screen-shot-6">screenshot of project</div>
+                    <div class="project-socials">
+                        <h3>Project name</h3>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                        <img src="./Assets/icons/open-in-new.svg" />
+                    </div>
+                    <div class="description">Short description of the project. Just a couple sentences will do.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer-container">
+        <h2>Contact me</h2>
+        <div class="footer-text">Please get in touch if you think our work could be mutually beneficial!</div>
+        <div class="adress">1234 Random Road <br> Random Town, Country 12345</div>
+        <div class="contacts">555-555-5555 <br> ashleywilliams@gmail.com</div>
+        <div class="footer-socials">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
+        </div>
+        <img 
+            srcset="./Assets/images/web_girl_sitting_small.jpg 300w,
+                    ./Assets/images/web_girl_sitting_medium.jpg 760w,
+                    ./Assets/images/web_girl_sitting_large.jpg 980w"  
+            sizes="(max-width: 320px) 300px, 
+                    (max-width: 760px) 720px, 
+                    980px"
+            src="./Assets/images/web_girl_sitting_large.jpg"
+            class="footer-img"
+            alt="Tech girl with laptop" 
+        />
     </footer>
 </body>
 </html>
