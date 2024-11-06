@@ -11,19 +11,16 @@
 <body>
     <header id="header-container">
         <img 
-            srcset="./Assets/images/tech-girl-300.jpg 300w,
-                    ./Assets/images/web_girl_medium.jpg 760w,
-                    ./Assets/images/web_girl_large.jpg 980w"  
-            sizes="(max-width: 320px) 300px, 
-                    (max-width: 760px) 720px, 
-                    980px"
-            src="./Assets/images/web_girl_large.jpg"
+            srcset="./Assets/images/header-img.jpg 300w,
+                    ./Assets/images/header-img-crop.jpg 760w"  
+            sizes="(max-width: 600px) 300px, 
+                    (max-width: 768px) 720px, 
+                    992px"
+            src="./Assets/images/header-img.jpg"
             class="header-img"
             alt="Tech girl with laptop" 
         />
         <h1 class="full-name">Ashley Williams</h1>
-    </header>
-    <main id="content-container">
         <div class="about-me">
             <h2>About me</h2>
             <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim, tortor in placerat efficitur, enim dui porttitor ligula, id pellentesque est neque a mauris. Donec molestie id nulla ac sodales. Phasellus accumsan arcu eu sapien tincidunt rutrum. </div>
@@ -33,6 +30,8 @@
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
             </div>
         </div>
+    </header>
+    <main id="content-container">
         <div class="my-work">
             <h2>My work</h2>
             <div class="project-container">
@@ -94,26 +93,29 @@
         </div>
     </main>
     <footer id="footer-container">
-        <h2>Contact me</h2>
-        <div class="footer-text">Please get in touch if you think our work could be mutually beneficial!</div>
-        <div class="adress">1234 Random Road <br> Random Town, Country 12345</div>
-        <div class="contacts">555-555-5555 <br> ashleywilliams@gmail.com</div>
-        <div class="footer-socials">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
+        <div class="contact-wrapper">
+            <h2>Contact me</h2>
+            <div class="footer-text">Please get in touch if you think our work could be mutually beneficial!</div>
+            <div class="adress">1234 Random Road <br> Random Town, Country 12345</div>
+            <div class="contacts">555-555-5555 <br> ashleywilliams@gmail.com</div>
+            <div class="footer-socials">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" />
+            </div>
         </div>
-        <img 
-            srcset="./Assets/images/web_girl_sitting_small.jpg 300w,
-                    ./Assets/images/web_girl_sitting_medium.jpg 760w,
-                    ./Assets/images/web_girl_sitting_large.jpg 980w"  
-            sizes="(max-width: 320px) 300px, 
-                    (max-width: 760px) 720px, 
-                    980px"
-            src="./Assets/images/web_girl_sitting_large.jpg"
+       <div class="footer-img-wrapper">
+            <img 
+            srcset="./Assets/images/footer-img.png 300w,
+                    ./Assets/images/footer-img.jpg 400w"  
+            sizes="(max-width: 600px) 300px, 
+                    (max-width: 768px) 720px, 
+                    992px"
+            src="./Assets/images/footer-img.jpg"
             class="footer-img"
             alt="Tech girl with laptop" 
-        />
+            />
+       </div>
     </footer>
 </body>
 </html>
