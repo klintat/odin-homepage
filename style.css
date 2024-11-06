@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 body {
-    font-family: "Roboto", sans-serif;;
+    font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3, .screen-shot {
@@ -189,6 +189,17 @@ h1, h2, h3, .screen-shot {
     gap: 10px;
 }
 
+.phone, .e-mail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.phone-icon, .e-mail-icon {
+    width: 30px;
+    height: 40px;
+}
+
 .footer-img {
     max-width: 100%;
     height: 100%;
@@ -199,50 +210,46 @@ h1, h2, h3, .screen-shot {
 
 /* Media query for small screens */
 @media (min-width: 600px) {
-   
+    .header-img {
+        max-width: 100%;
+        height: 650px;
+        display: block;
+        margin: 0;
+        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
+    }
+
+    .phone-icon, .e-mail-icon {
+        display: none;
+    }
 }
 
   /* Media query for medium screens */
 @media (min-width: 768px) {
-    #header-container {
-        position: relative;
-        overflow: hidden;
-        padding: 45px 35px;
-    }
-
     #header-container::before {
-        content: "";
-        position: absolute;
-        width: 170%;
-        height: 170%;
-        top: -115%;
-        left: -65%;
-        z-index: -1;
-        background-color: #0891b2;
+        width: 200%;
+        height: 200%;
+        top: -150%;
+        left: -70%;
         transform: rotate(70deg);
     }
 
     .header-img {
-        width: 350px;
-        height: 410px;
+        width: 380px;
+        height: 420px;
         display: block;
-        margin: 0 15px 15px 0;
+        margin: 30px 15px 15px 25px;
         box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
         object-fit: cover;
         float: left;
     }
 
     .full-name {
-        transform: translate(0%, -550%);
-        font-size: 3.375rem;
-        text-align: left;
-        color: rgb(255, 255, 255);
-        text-shadow: 2px 2px 4px #000000c1;
-        float: right;
+        transform: translate(-18%, 75%);
+        font-size: 40px;
     }
 
     .about-me {
-        margin: 110px 20px 60px 20px;
+        margin: 110px 20px 60px 70px;
         padding: 80px 30px 20px 20px;
         background-color: white;
         box-shadow: 3px 3px 8px 3px rgba(109, 109, 109, 0.463);
@@ -272,7 +279,8 @@ h1, h2, h3, .screen-shot {
     }
 
     .project {
-        max-width: 300px;
+        max-width: 305px;
+        height: auto;
     }
 
     .project-socials {
@@ -283,7 +291,6 @@ h1, h2, h3, .screen-shot {
         font-size: 20px;
     }
 
-    
     .screen-shot-1 {
         background-color: #9e1c1c;
     }
@@ -329,8 +336,7 @@ h1, h2, h3, .screen-shot {
     }
 
     .phone-icon, .e-mail-icon {
-        width: 30px;
-        height: 40px;
+        display: flex;
     }
 
     .footer-socials {
@@ -340,7 +346,6 @@ h1, h2, h3, .screen-shot {
     .footer-img {
         max-width: 250px;
         height: 340px;
-        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.37);
         object-fit: cover;
         margin: 40px 40px 60px 40px;
     }
@@ -348,5 +353,98 @@ h1, h2, h3, .screen-shot {
 
   /* Media query for large screens */
 @media (min-width: 992px) {
-   
+    #header-container::before {
+        width: 300%;
+        height: 300%;
+        top: -425%;
+        left: -145%;
+        transform: rotate(75deg);
+    }
+
+    .full-name {
+        transform: translate(-107%, 548%);
+        font-size: 52px;
+    }
+
+    .about-me {
+        margin: 80px 20px 60px 70px;
+        padding: 20px 15px 10px 0;
+    }
+
+    .about-me > div {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .header-socials {
+        display: flex;
+        justify-self: right;
+    }
+
+    .header-socials > img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .my-work > h2 {
+        font-size: 42px;
+    }
+
+    #content-container {
+        margin: 0;
+    }
+
+    .project {
+        max-width: 278px;
+        height: auto;
+    }
+
+    .project-socials > h3 {
+        padding: 0;
+    }
+
+    .contact-wrapper {
+        font-size: 16px;
+        padding: 10px 30px 10px 50px;
+        gap: 20px;
+    }
+
+    .contact-wrapper > h2 {
+        font-size: 26px;
+        margin-left: 0;
+        justify-self: left;
+    }
+
+    .contacts {
+        margin-left: 0;
+    }
+
+    #footer-container {
+        padding: 40px 0 0 0;
+        align-items: unset;
+    }
+
+    .footer-socials {
+        margin-left: 0;
+    }
+
+    .footer-socials > img{
+        display: flex;
+        gap: 25px;
+        height: 26px;
+        width: 26px;
+    }
+
+    .footer-text, .adress, .phone {
+        font-size: 14px;
+        margin-left: 0;
+    }
+
+    .footer-img {
+        max-width: 550px;
+        height: 340px;
+        object-fit: cover;
+        margin: 0 45px 50px 0;
+        box-shadow: none;
+    }
 }
